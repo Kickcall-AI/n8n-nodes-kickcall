@@ -77,6 +77,7 @@ export class Kickcall implements INodeType {
 										items: INodeExecutionData[],
 										response: IN8nHttpFullResponse,
 									): Promise<INodeExecutionData[]> {
+										// eslint-disable-next-line @typescript-eslint/no-explicit-any
 										const body = response.body as any;
 										const data = body.data || {};
 										const meta = body.meta || {};
@@ -110,6 +111,7 @@ export class Kickcall implements INodeType {
 										items: INodeExecutionData[],
 										response: IN8nHttpFullResponse,
 									): Promise<INodeExecutionData[]> {
+										// eslint-disable-next-line @typescript-eslint/no-explicit-any
 										const body = response.body as any;
 										const data = body.data || {};
 										
@@ -234,7 +236,7 @@ export class Kickcall implements INodeType {
 								property: 'metadata',
 							},
 						},
-						description: 'An arbitrary object (JSON) for storage purpose only. You can put anything here like your internal customer id associated with the call. Not used for processing. You can later get this field from the call object. Example: {"source":"n8n workflow"}',
+						description: 'An arbitrary object (JSON) for storage purpose only. You can put anything here like your internal customer ID associated with the call. Not used for processing. You can later get this field from the call object. Example: {"source":"n8n workflow"}',
 					},
 				],
 			},

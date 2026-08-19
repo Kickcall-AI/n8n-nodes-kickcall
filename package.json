@@ -26,6 +26,9 @@
 		"name": "Vishal",
 		"email": "vishal@Kickcall.ai"
 	},
+	"publishConfig": {
+		"access": "public"
+	},
 	"scripts": {
 		"build": "n8n-node build",
 		"build:watch": "tsc --watch",

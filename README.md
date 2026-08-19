@@ -41,6 +41,7 @@ Once installed, you can use the node inside your workflow:
 ## Resources
 
 * [Kickcall AI Website](https://kickcall.ai)
+* [Kickcall n8n Integration Guide](https://support.kickcall.ai/help/articles/4414396-n8n)
 * [n8n Community Nodes Documentation](https://docs.n8n.io/integrations/community-nodes/)
 
 ## License

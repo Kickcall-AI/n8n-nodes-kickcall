@@ -29,7 +29,7 @@ export class Kickcall implements INodeType {
 			},
 		],
 		requestDefaults: {
-			baseURL: '={{$credentials.environment === "development" ? "https://api-test.kickcall.ai" : "https://api-app.kickcall.ai"}}',
+			baseURL: 'https://api-app.kickcall.ai',
 			headers: {
 				Accept: 'application/json',
 				'Content-Type': 'application/json',

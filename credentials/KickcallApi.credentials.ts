@@ -10,8 +10,7 @@ export class KickcallApi implements ICredentialType {
 	name = 'kickcallApi';
 	displayName = 'Kickcall API';
 	icon: Icon = 'file:../icons/kickcall.svg';
-	// Docs URL for the Keragon app was https://knowledge-base.kickcall.ai/articles/6275887-keragon
-	documentationUrl = 'https://www.kickcall.ai';
+	documentationUrl = 'https://support.kickcall.ai/help/articles/4414396-n8n';
 	properties: INodeProperties[] = [
 		{
 			displayName: 'API Key',
@@ -32,23 +31,6 @@ export class KickcallApi implements ICredentialType {
 			required: true,
 			description: 'The email address associated with your Kickcall account',
 		},
-		{
-			displayName: 'Environment',
-			name: 'environment',
-			type: 'options',
-			options: [
-				{
-					name: 'Production',
-					value: 'production',
-				},
-				{
-					name: 'Development',
-					value: 'development',
-				},
-			],
-			default: 'production',
-			required: true,
-		},
 	];
 
 	authenticate: IAuthenticateGeneric = {
@@ -62,7 +44,7 @@ export class KickcallApi implements ICredentialType {
 
 	test: ICredentialTestRequest = {
 		request: {
-			baseURL: '={{$credentials.environment === "development" ? "https://api-test.kickcall.ai" : "https://api-app.kickcall.ai"}}',
+			baseURL: 'https://api-app.kickcall.ai',
 			url: '/api/v1/public/api_keys/validate',
 			method: 'POST',
 			body: {

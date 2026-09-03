@@ -23,8 +23,8 @@ To install this node, you can either:
 
 1. Get your API Key from your Kickcall AI dashboard.
 2. In n8n, create a new credential for **Kickcall API**.
-3. Select your Environment (Production or Development).
-4. Enter your API Key.
+3. Enter your **API Key**.
+4. Enter your **Kickcall Business Email**.
 
 ## Usage
 
